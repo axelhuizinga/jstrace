@@ -1,0 +1,7 @@
+-cp src
+-lib hxnodejs:git:https://github.com/HaxeFoundation/hxnodejs
+#-lib hxsocketio
+-js bin/jsTraceServer.js
+-D js-es=6
+-main Go
+-cmd rsync -rav --size-only -e "ssh -p 666 -q -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null" --progress bin/*  root@econet4.me:/var/www/cunity.me/web/dev/jsTrace/

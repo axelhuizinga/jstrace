@@ -1,0 +1,9 @@
+client/node_modules
+client/.haxelib
+client/.vscode
+client/webpack.local.js
+
+server/node_modules
+server/.haxelib
+server/.vscode
+server/server.code-workspace

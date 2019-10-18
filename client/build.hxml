@@ -1,0 +1,8 @@
+-lib haxe-loader:git:https://github.com/axelhuizinga/webpack-haxe-loader.git
+-lib hxnodejs:git:https://github.com/HaxeFoundation/hxnodejs
+#-lib hxsocketio
+-cp src
+-js bin/js/traceClient.js
+-D js-es=6
+-main App
+#-cmd rsync -rav --size-only -e "ssh -p 666 -q -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null" --progress bin/*  root@econet4.me:/var/www/cunity.me/web/dev/jsTrace/
